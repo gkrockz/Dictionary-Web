@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%) no-repeat center center fixed;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    font-size: 18px;
+}
+input {
+    font-family: Verdana,sans-serif;
+}
+.wrapper button {
+    padding: 15px 0;
+    cursor: pointer;
+    width: 25%;
+    font-size: 16px;
+    background-color: #262626;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 7px;
+}
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #266bec;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 12px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #80d0c7;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(106, 153, 207);
+    border-radius:7px;
+    color:black !important;
+}
+.zoom:hover,.zoom:focus 
+{
+  transform: scale(1.05);
+}
+.zoom:active 
+{
+    transform: scale(.90);
+}
