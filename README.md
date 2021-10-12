@@ -1,2 +1,7 @@
 # Dictionary-Web
-Discover various words this webpage
+
+## 📔 Search and discover various word definitions with the help of this webpage.
+
+<br>
+
+> ### 🔗 API Reference: [Dictionary API](https://dictionaryapi.dev/)
