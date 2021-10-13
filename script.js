@@ -8,7 +8,7 @@ function playSound() {
     voice.play();
 }
 
-function searchWord(word)  {
+function fetchDefinition(word)  {
     fetch(`${url}${word}`).then((response) => response.json()).then((data) => {
             result.innerHTML = `
                 <div class="word">
@@ -39,12 +39,12 @@ function searchWord(word)  {
 
 function EventForKeyPress(event) {
     if (event.keyCode === 13) {
-      searchWord(word.value);
+        fetchDefinition(word.value);
     }
   }
 
 searchBtn.addEventListener("click", () => {
-    searchWord(word.value);
+    fetchDefinition(word.value);
 });
 
 word.addEventListener("keypress", EventForKeyPress);
